@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultkeep/core/colors/app_colors.dart';
 import 'package:vaultkeep/core/colors/app_constants.dart';
 import 'package:vaultkeep/core/colors/app_font_size.dart';
+import 'package:vaultkeep/core/colors/app_string.dart';
 
 class AppSubtitle extends StatelessWidget {
   const AppSubtitle({super.key});
@@ -11,7 +12,7 @@ class AppSubtitle extends StatelessWidget {
     return SizedBox(
       width: 280,
       child: Text(
-        'Your digital fortress for secure password management',
+        AppString.about,
         textAlign: TextAlign.center,
         style: TextStyle(
           fontFamily: AppConstants.appFontFamily,

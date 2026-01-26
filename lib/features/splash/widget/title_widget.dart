@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultkeep/core/colors/app_colors.dart';
 import 'package:vaultkeep/core/colors/app_constants.dart';
 import 'package:vaultkeep/core/colors/app_font_size.dart';
+import 'package:vaultkeep/core/colors/app_string.dart';
 
 class AppTitle extends StatelessWidget {
   const AppTitle({super.key});
@@ -17,9 +18,9 @@ class AppTitle extends StatelessWidget {
           color: Colors.white,
         ),
         children: const [
-          TextSpan(text: 'Vault'),
+          TextSpan(text: AppString.vault),
           TextSpan(
-            text: 'Keep',
+            text: AppString.keep,
             style: TextStyle(color: AppColors.primary),
           ),
         ],

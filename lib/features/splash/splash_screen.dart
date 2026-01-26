@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:vaultkeep/core/colors/app_colors.dart';
-import 'package:vaultkeep/features/splash/widget/background_glow_widget.dart';
 import 'package:vaultkeep/features/splash/widget/branding_section_widget.dart';
 import 'package:vaultkeep/features/splash/widget/progress_section_widget.dart';
 

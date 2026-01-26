@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:vaultkeep/core/colors/app_colors.dart';
 import 'package:vaultkeep/core/colors/app_constants.dart';
 import 'package:vaultkeep/core/colors/app_font_size.dart';
+import 'package:vaultkeep/core/colors/app_string.dart';
 import 'package:vaultkeep/features/splash/widget/progressbar_widget.dart';
 
 class ProgressSection extends StatelessWidget {
@@ -17,7 +18,7 @@ class ProgressSection extends StatelessWidget {
             Icon(Icons.lock_open, color: AppColors.primary, size: 16),
             SizedBox(width: 8),
             Text(
-              'Initializing secure environment...',
+              AppString.initialize,
               style: TextStyle(
                 fontFamily: AppConstants.appFontFamily,
                 fontSize: FontSizes.body,

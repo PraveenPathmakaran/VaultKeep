@@ -26,16 +26,9 @@ class VaultIcon extends StatelessWidget {
         decoration: BoxDecoration(
           color: AppColors.primary,
           borderRadius: BorderRadius.circular(16),
-          boxShadow: [
-            BoxShadow(
-              color: AppColors.primary.withOpacity(0.6),
-              blurRadius: 40,
-              spreadRadius: -10,
-            ),
-          ],
         ),
         child: const Icon(
-          Icons.shield,
+          Icons.lock,
           size: 64,
           color: Colors.white,
         ),
