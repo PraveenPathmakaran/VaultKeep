@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vaultkeep/features/splash/splash_screen.dart';
+import 'package:vaultkeep/features/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,16 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        
         // colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const VaultKeepSplashScreen(),
+      home: const SplashScreen(),
       themeMode: ThemeMode.dark,
-       darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
-      
+      darkTheme: ThemeData(brightness: Brightness.dark),
     );
   }
 }
-
