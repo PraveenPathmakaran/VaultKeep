@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vaultkeep/core/theme/text_theme.dart';
 import 'app_colors.dart';
 import 'app_gradients.dart';
 
@@ -8,7 +9,7 @@ class AppTheme {
     brightness: Brightness.light,
     scaffoldBackgroundColor: Colors.transparent,
     colorScheme: const ColorScheme.light(
-      primary: Colors.blue,
+      primary: AppColors.primary,
       surface: AppColors.backgroundLight,
     ),
     extensions: const [
@@ -20,6 +21,7 @@ class AppTheme {
         ),
       ),
     ],
+    textTheme: AppTextTheme.textTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -27,7 +29,7 @@ class AppTheme {
     brightness: Brightness.dark,
     scaffoldBackgroundColor: Colors.transparent,
     colorScheme: const ColorScheme.dark(
-      primary: Colors.blue,
+      primary: AppColors.primary,
       surface: AppColors.backgroundDark,
     ),
     extensions: const [
@@ -39,5 +41,6 @@ class AppTheme {
         ),
       ),
     ],
+    textTheme: AppTextTheme.textTheme,
   );
 }
