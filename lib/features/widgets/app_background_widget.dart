@@ -1,28 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:vaultkeep/core/theme/app_gradients.dart';
 
-class VaultBackground extends StatelessWidget {
-  const VaultBackground({super.key});
+class AppBackground extends StatelessWidget {
+  final Widget child;
+  const AppBackground({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xFF101622),
-      child: Stack(
-        children: [
-          Positioned(
-            left: -55,
-            top: 192,
-            child: Container(
-              width: 500,
-              height: 500,
-              decoration: BoxDecoration(
-                color: const Color(0x19135BEC),
-                borderRadius: BorderRadius.circular(9999),
-              ),
-            ),
-          ),
-        ],
-      ),
+    final gradients = Theme.of(context).extension<AppGradients>()!;
+    return DecoratedBox(
+      decoration: BoxDecoration(gradient: gradients.backgroundGradient),
+      child: child,
     );
   }
 }

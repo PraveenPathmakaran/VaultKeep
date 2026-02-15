@@ -6,6 +6,6 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return VaultBackground();
+    return AppBackground(child: Scaffold(backgroundColor: Colors.transparent));
   }
 }
